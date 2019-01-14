@@ -22,7 +22,10 @@ int FindGCD(int x,int y)
  int main()
  {
   int x,y;
-  std::cin >> x>>y;
+  std::cout << "First number : ";
+  std::cin >>x;
+  std::cout << "Second number : ";
+  std::cin >> y;
   std::cout << "GCD is  " <<FindGCD(x,y)<< '\n';
   return 0;
 }
