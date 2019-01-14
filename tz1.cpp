@@ -1,24 +1,20 @@
 #include<iostream>
 using namespace std;
-double findcirclearea(double r)
+int findABsolute(int a)
 {
-  double A =3.14*r*r;
-  return A;
+  if (a<0) {
+  return -a;  }
+  else{
+  return a;
+  }
+
 }
 
 int main()
 {
-  double A1 = findcirclearea(1);
-  cout<<"A1 = "<<A1<<'\n';
-
-  double r2 = 2;
-  double A2 = findcirclearea(r2);
-  cout << "A2 =" <<A2<< '\n';
-
-  cout << "A3 =" <<findcirclearea(3)<< '\n';
-
-
-
-
+  int x;
+  std::cout << "Plz insert number : ";
+  std::cin >>x;
+  std::cout << "Absolute of "<<x<<" is :"<<findABsolute(x)<< '\n';
   return 0;
 }
